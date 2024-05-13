@@ -8,37 +8,14 @@ import javafx.scene.control.Label;
 public class HelloController
 {
     @FXML
-    public Button abUsButton;
+    private Button abUsButton;
 
     @FXML
-    public Button searchButton;
+    private Button searchButton;
 
     @FXML
-    public Button listButton;
+    private Button listButton;
 
     @FXML
-    public Button exitButton;
-
-    @FXML
-    public Label shopName;
-
-    public void AboutUs(ActionEvent actionEvent)
-    {
-
-    }
-
-    public void SearchCards(ActionEvent actionEvent)
-    {
-
-    }
-
-    public void Exit(ActionEvent actionEvent)
-    {
-
-    }
-
-    public void ListCards(ActionEvent actionEvent)
-    {
-
-    }
+    private Button exitButton;
 }
