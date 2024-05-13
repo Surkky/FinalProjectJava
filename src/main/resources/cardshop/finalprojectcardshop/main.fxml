@@ -7,14 +7,14 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cardshop.finalprojectcardshop.HelloController">
    <children>
-      <Button fx:id="abUsButton" layoutX="450.0" layoutY="340.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="About Us" />
-      <Button fx:id="searchButton" layoutX="243.0" layoutY="167.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="Search" />
-      <Button fx:id="exitButton" layoutX="243.0" layoutY="267.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="Exit" />
-      <Label layoutX="231.0" layoutY="108.0" text="Magic Card Shop">
+      <Button fx:id="abUsButton" layoutX="673.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="About Us" />
+      <Button fx:id="searchButton" layoutX="344.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="Search" />
+      <Button fx:id="exitButton" layoutX="344.0" layoutY="317.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="Exit" />
+      <Label layoutX="332.0" layoutY="158.0" text="Magic Card Shop">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Button fx:id="listButton" layoutX="244.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="List Cards" />
+      <Button fx:id="listButton" layoutX="345.0" layoutY="267.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="List Cards" />
    </children>
 </Pane>
