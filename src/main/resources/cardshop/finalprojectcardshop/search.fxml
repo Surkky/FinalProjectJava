@@ -7,23 +7,23 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cardshop.finalprojectcardshop.Search">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cardshop.finalprojectcardshop.Search">
    <children>
-      <TableView id="chartCards" layoutX="18.0" layoutY="21.0" prefHeight="240.0" prefWidth="564.0">
+      <TableView fx:id="chartCards" layoutX="18.0" layoutY="21.0" prefHeight="355.0" prefWidth="762.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Name" />
-          <TableColumn prefWidth="75.0" text="Collection" />
-            <TableColumn prefWidth="75.0" text="Rarity" />
-            <TableColumn prefWidth="244.0" text="Description" />
-            <TableColumn prefWidth="47.99997558593748" text="Qty" />
+          <TableColumn prefWidth="111.0" text="Name" />
+          <TableColumn prefWidth="180.0" text="Collection" />
+            <TableColumn prefWidth="46.0" text="Rarity" />
+            <TableColumn prefWidth="327.0" text="Description" />
+            <TableColumn prefWidth="40.0" text="Qty" />
         </columns>
       </TableView>
-      <Button id="exitButton" layoutX="235.0" layoutY="344.0" mnemonicParsing="false" onAction="#exitMenu" prefHeight="26.0" prefWidth="130.0" text="Exit" />
-      <TextField id="NameText" layoutX="27.0" layoutY="292.0" prefHeight="25.0" prefWidth="217.0" />
-      <TextField id="CollectionText" layoutX="312.0" layoutY="292.0" prefHeight="25.0" prefWidth="217.0" />
-      <Button id="searchName" layoutX="244.0" layoutY="292.0" mnemonicParsing="false" onAction="#searchByName" prefHeight="25.0" prefWidth="55.0" text="Search" />
-      <Button id="searchCollection" layoutX="529.0" layoutY="292.0" mnemonicParsing="false" onAction="#searchByCollection" prefHeight="25.0" prefWidth="55.0" text="Search" />
-      <Label layoutX="91.0" layoutY="275.0" prefHeight="17.0" prefWidth="89.0" text="Search by name" />
-      <Label layoutX="365.0" layoutY="275.0" prefHeight="17.0" prefWidth="111.0" text="Search by collection" />
+      <Button fx:id="exitButton" layoutX="335.0" layoutY="444.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="130.0" text="Exit" />
+      <TextField fx:id="NameText" layoutX="122.0" layoutY="399.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="CollectionText" layoutX="407.0" layoutY="399.0" prefHeight="25.0" prefWidth="217.0" />
+      <Button fx:id="searchName" layoutX="339.0" layoutY="399.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="Search" />
+      <Button fx:id="searchCollection" layoutX="624.0" layoutY="399.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="Search" />
+      <Label layoutX="186.0" layoutY="382.0" prefHeight="17.0" prefWidth="89.0" text="Search by name" />
+      <Label layoutX="460.0" layoutY="382.0" prefHeight="17.0" prefWidth="111.0" text="Search by collection" />
    </children>
 </AnchorPane>
