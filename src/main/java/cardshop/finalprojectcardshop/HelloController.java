@@ -14,6 +14,9 @@ public class HelloController
     public Button searchButton;
 
     @FXML
+    public Button listButton;
+
+    @FXML
     public Button exitButton;
 
     @FXML
@@ -30,6 +33,11 @@ public class HelloController
     }
 
     public void Exit(ActionEvent actionEvent)
+    {
+
+    }
+
+    public void ListCards(ActionEvent actionEvent)
     {
 
     }
