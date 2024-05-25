@@ -12,6 +12,7 @@ import java.io.IOException;
  * This class extends {@link javafx.application.Application} and serves as the entry point for the JavaFX application.
  */
 public class HelloApplication extends Application {
+
     /**
      * The main entry point for all JavaFX applications.
      * This method is called after the JavaFX runtime has been initialized.
