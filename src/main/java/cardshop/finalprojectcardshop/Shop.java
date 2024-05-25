@@ -16,6 +16,14 @@ public class Shop
     public Shop() {
         cards = new ArrayList<>();
     }
+    /**
+     * Gets the list of cards.
+     *
+     * @return the list of cards.
+     */
+    public List<SearchCards> getCards() {
+        return cards;
+    }
 
     /**
      * Loads cards from a given file.
@@ -24,10 +32,10 @@ public class Shop
      * @throws IOException if an I/O error occurs.
      */
     public void loadCardsFromFile(String fileName) throws IOException {
-        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("cards.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                String[] cardDetails = line.split(",");
+                String[] cardDetails = line.split(", ");
                 if (cardDetails.length == 5) {
                     SearchCards card = new SearchCards();
                     card.setName(cardDetails[0]);
@@ -39,14 +47,5 @@ public class Shop
                 }
             }
         }
-    }
-
-    /**
-     * Gets the list of cards.
-     *
-     * @return the list of cards.
-     */
-    public List<SearchCards> getCards() {
-        return cards;
     }
 }

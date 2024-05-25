@@ -22,8 +22,8 @@
       <Button fx:id="exitButton" layoutX="335.0" layoutY="444.0" mnemonicParsing="false" onAction="#goMainMenu" prefHeight="26.0" prefWidth="130.0" text="Exit" />
       <TextField fx:id="NameText" layoutX="122.0" layoutY="399.0" prefHeight="25.0" prefWidth="217.0" />
       <TextField fx:id="CollectionText" layoutX="407.0" layoutY="399.0" prefHeight="25.0" prefWidth="217.0" />
-      <Button fx:id="searchName" layoutX="339.0" layoutY="399.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="Search" />
-      <Button fx:id="searchCollection" layoutX="624.0" layoutY="399.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="Search" />
+      <Button fx:id="searchName" layoutX="339.0" layoutY="399.0" mnemonicParsing="false" onAction="#searchByName" prefHeight="25.0" prefWidth="55.0" text="Search" />
+      <Button fx:id="searchCollection" layoutX="624.0" layoutY="399.0" mnemonicParsing="false" onAction="#searchByCollection" prefHeight="25.0" prefWidth="55.0" text="Search" />
       <Label layoutX="186.0" layoutY="382.0" prefHeight="17.0" prefWidth="89.0" text="Search by name" />
       <Label layoutX="460.0" layoutY="382.0" prefHeight="17.0" prefWidth="111.0" text="Search by collection" />
    </children>
