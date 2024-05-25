@@ -1,0 +1,41 @@
+Forest, Outlaws of the Thunder Junction, C, Tap to gain 1 green mana, 100
+Forest, Modern Horizons III, C, Tap to gain 1 green mana, 100
+Forest, Dominaria, C, Tap to gain 1 green mana, 100
+Forest, War of the Spark, C, Tap to gain 1 green mana, 100
+Forest, Lost Caverns of Ixalan, C, Tap to gain 1 green mana, 100
+Forest, Alpha, C, Tap to gain 1 green mana, 100
+Forest, Beta, C, Tap to gain 1 green mana, 100
+Forest, Aether Revolt, C, Tap to gain 1 green mana, 100
+Island, Outlaws of the Thunder Junction, C, Tap to gain 1 blue mana, 100
+Island, Modern Horizons III, C, Tap to gain 1 blue mana, 100
+Island, Dominaria, C, Tap to gain 1 blue mana, 100
+Island, War of the Spark, C, Tap to gain 1 blue mana, 100
+Island, Lost Caverns of Ixalan, C, Tap to gain 1 blue mana, 100
+Island, Alpha, C, Tap to gain 1 blue mana, 100
+Island, Beta, C, Tap to gain 1 blue mana, 100
+Island, Aether Revolt, C, Tap to gain 1 blue mana, 100
+Swamp, Outlaws of the Thunder Junction, C, Tap to gain 1 black mana, 100
+Swamp, Modern Horizons III, C, Tap to gain 1 black mana, 100
+Swamp, Dominaria, C, Tap to gain 1 black mana, 100
+Swamp, War of the Spark, C, Tap to gain 1 black mana, 100
+Swamp, Lost Caverns of Ixalan, C, Tap to gain 1 black mana, 100
+Swamp, Alpha, C, Tap to gain 1 black mana, 100
+Swamp, Beta, C, Tap to gain 1 black mana, 100
+Swamp, Aether Revolt, C, Tap to gain 1 black mana, 100
+Plains, Outlaws of the Thunder Junction, C, Tap to gain 1 white mana, 100
+Plains, Modern Horizons III, C, Tap to gain 1 white mana, 100
+Plains, Dominaria, C, Tap to gain 1 white mana, 100
+Plains, War of the Spark, C, Tap to gain 1 white mana, 100
+Plains, Lost Caverns of Ixalan, C, Tap to gain 1 white mana, 100
+Plains, Alpha, C, Tap to gain 1 white mana, 100
+Plains, Beta, C, Tap to gain 1 white mana, 100
+Plains, Aether Revolt, C, Tap to gain 1 white mana, 100
+Mountain, Outlaws of the Thunder Junction, C, Tap to gain 1 red mana, 100
+Mountain, Modern Horizons III, C, Tap to gain 1 red mana, 100
+Mountain, Dominaria, C, Tap to gain 1 red mana, 100
+Mountain, War of the Spark, C, Tap to gain 1 red mana, 100
+Mountain, Lost Caverns of Ixalan, C, Tap to gain 1 red mana, 100
+Mountain, Alpha, C, Tap to gain 1 red mana, 100
+Mountain, Beta, C, Tap to gain 1 red mana, 100
+Mountain, Aether Revolt, C, Tap to gain 1 red mana, 100
+
