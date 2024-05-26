@@ -89,7 +89,7 @@ public class Search {
         try {
             shop.loadCardsFromFile("cards.txt");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Error reading file: " + e.getMessage());
         }
 
         cardName.setCellValueFactory(new PropertyValueFactory<>("name"));
