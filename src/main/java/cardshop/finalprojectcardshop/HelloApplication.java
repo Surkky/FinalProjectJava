@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * Main application class for the Magic Card Shop.
+ * Main class for the project
  * @author Cruz Calderón Piñol
  * @version 1.0
  * @see HelloController

@@ -68,6 +68,8 @@ public class Search {
     @FXML
     private Button searchName;
 
+    private Shop shop;
+
     /**
      * Switches to the main menu scene when the exit button is clicked.
      * @param event the action event triggered by clicking the exit button.
@@ -77,8 +79,6 @@ public class Search {
     void goMainMenu(ActionEvent event) throws IOException {
         new SceneSwitch(searchFrame, "main.fxml");
     }
-
-    private Shop shop;
 
     /**
      * Initializes the shop, reads the file and locates the values into the table.
