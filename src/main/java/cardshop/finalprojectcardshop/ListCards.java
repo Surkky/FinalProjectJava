@@ -9,7 +9,16 @@ import javafx.scene.layout.AnchorPane;
 import java.io.IOException;
 
 /**
- * Controller class for handling the list cards scene in the Magic Card Shop application.
+ * Controller class for handling the list cards scene in the application.
+ * @author Cruz Calderón Piñol
+ * @version 1.0
+ * @see HelloController
+ * @see HelloApplication
+ * @see SceneSwitch
+ * @see Search
+ * @see SearchCards
+ * @see Shop
+ * @since 1.0
  */
 public class ListCards {
 
@@ -36,7 +45,6 @@ public class ListCards {
 
     /**
      * Switches to the main menu scene when the exit button is clicked.
-     *
      * @param event the action event triggered by clicking the exit button.
      * @throws IOException if an I/O error occurs during scene switching.
      */
@@ -44,6 +52,5 @@ public class ListCards {
     void goMainMenu(ActionEvent event) throws IOException {
         new SceneSwitch(listCardsFrame, "main.fxml");
     }
-
 }
 

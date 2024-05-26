@@ -1,8 +1,17 @@
 package cardshop.finalprojectcardshop;
 
 /**
- * Represents a card in the Magic Card Shop application.
+ * Represents a card in the application.
  * This class holds details about the card such as name, collection, rarity, description, and quantity.
+ * @author Cruz Calderón Piñol
+ * @version 1.0
+ * @see HelloController
+ * @see ListCards
+ * @see SceneSwitch
+ * @see Search
+ * @see HelloApplication
+ * @see Shop
+ * @since 1.0
  */
 public class SearchCards
 {
@@ -14,7 +23,6 @@ public class SearchCards
 
     /**
      * Gets the name of the card.
-     *
      * @return the name of the card.
      */
     public String getName() {
@@ -23,7 +31,6 @@ public class SearchCards
 
     /**
      * Sets the name of the card.
-     *
      * @param name the name of the card.
      */
     public void setName(String name) {
@@ -32,7 +39,6 @@ public class SearchCards
 
     /**
      * Gets the collection to which the card belongs.
-     *
      * @return the collection of the card.
      */
     public String getCollection() {
@@ -41,7 +47,6 @@ public class SearchCards
 
     /**
      * Sets the collection to which the card belongs.
-     *
      * @param collection the collection of the card.
      */
     public void setCollection(String collection) {
@@ -50,7 +55,6 @@ public class SearchCards
 
     /**
      * Gets the rarity of the card.
-     *
      * @return the rarity of the card.
      */
     public String getRarity() {
@@ -59,7 +63,6 @@ public class SearchCards
 
     /**
      * Sets the rarity of the card.
-     *
      * @param rarity the rarity of the card.
      */
     public void setRarity(String rarity) {
@@ -68,7 +71,6 @@ public class SearchCards
 
     /**
      * Gets the description of the card.
-     *
      * @return the description of the card.
      */
     public String getDescription() {
@@ -77,7 +79,6 @@ public class SearchCards
 
     /**
      * Sets the description of the card.
-     *
      * @param description the description of the card.
      */
     public void setDescription(String description) {
@@ -86,7 +87,6 @@ public class SearchCards
 
     /**
      * Gets the quantity of the card in stock.
-     *
      * @return the quantity of the card.
      */
     public int getQuantity() {
@@ -95,7 +95,6 @@ public class SearchCards
 
     /**
      * Sets the quantity of the card in stock.
-     *
      * @param quantity the quantity of the card.
      */
     public void setQuantity(int quantity) {

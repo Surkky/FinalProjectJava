@@ -13,6 +13,15 @@ import java.util.Optional;
 
 /**
  * Controller class for handling the UI interactions in the Magic Card Shop application.
+ * @author Cruz Calderón Piñol
+ * @version 1.0
+ * @see HelloApplication
+ * @see ListCards
+ * @see SceneSwitch
+ * @see Search
+ * @see SearchCards
+ * @see Shop
+ * @since 1.0
  */
 public class HelloController {
 
@@ -33,7 +42,6 @@ public class HelloController {
 
     /**
      * Exits the application when the exit button is clicked.
-     *
      * @param event the action event triggered by clicking the exit button.
      * @throws IOException if an I/O error occurs.
      */
@@ -44,7 +52,6 @@ public class HelloController {
 
     /**
      * Switches to the list cards scene when the list button is clicked.
-     *
      * @param event the action event triggered by clicking the list button.
      * @throws IOException if an I/O error occurs during scene switching.
      */
@@ -55,7 +62,6 @@ public class HelloController {
 
     /**
      * Switches to the search scene when the search button is clicked.
-     *
      * @param event the action event triggered by clicking the search button.
      * @throws IOException if an I/O error occurs during scene switching.
      */
@@ -66,7 +72,6 @@ public class HelloController {
 
     /**
      * Displays an information alert about the project when the about us button is clicked.
-     *
      * @param event the action event triggered by clicking the about us button.
      */
     @FXML
@@ -76,6 +81,5 @@ public class HelloController {
         info.setContentText("Hello, this is my final project for Development Enviroments, I'm Cruz Calderón Piñol and I've developed this app.");
         Optional<ButtonType> result = info.showAndWait();
     }
-
 }
 

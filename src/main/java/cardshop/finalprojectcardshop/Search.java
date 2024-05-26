@@ -16,7 +16,16 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Controller class for handling the search scene in the Magic Card Shop application.
+ * Controller class for handling the search scene in the application.
+ * @author Cruz Calderón Piñol
+ * @version 1.0
+ * @see HelloController
+ * @see ListCards
+ * @see SceneSwitch
+ * @see HelloApplication
+ * @see SearchCards
+ * @see Shop
+ * @since 1.0
  */
 public class Search {
 
@@ -61,7 +70,6 @@ public class Search {
 
     /**
      * Switches to the main menu scene when the exit button is clicked.
-     *
      * @param event the action event triggered by clicking the exit button.
      * @throws IOException if an I/O error occurs during scene switching.
      */
@@ -72,6 +80,9 @@ public class Search {
 
     private Shop shop;
 
+    /**
+     * Initializes the shop, reads the file and locates the values into the table.
+     */
     @FXML
     public void initialize() {
         shop = new Shop();
@@ -88,6 +99,10 @@ public class Search {
         cardRarity.setCellValueFactory(new PropertyValueFactory<>("rarity"));
     }
 
+    /**
+     * Searches for cards by name and updates the table with the results.
+     * @param event the action event triggered by clicking the search by collection button.
+     */
     @FXML
     void searchByName(ActionEvent event) {
         String name = NameText.getText().trim().toLowerCase();
@@ -99,7 +114,6 @@ public class Search {
 
     /**
      * Searches for cards by collection and updates the table with the results.
-     *
      * @param event the action event triggered by clicking the search by collection button.
      */
     @FXML
@@ -113,7 +127,6 @@ public class Search {
 
     /**
      * Updates the table with a list of cards.
-     *
      * @param cards the list of cards to display in the table.
      */
     private void updateTable(List<SearchCards> cards) {
