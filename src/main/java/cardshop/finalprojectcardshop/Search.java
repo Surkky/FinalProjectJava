@@ -97,6 +97,8 @@ public class Search {
         cardDescription.setCellValueFactory(new PropertyValueFactory<>("description"));
         cardQty.setCellValueFactory(new PropertyValueFactory<>("quantity"));
         cardRarity.setCellValueFactory(new PropertyValueFactory<>("rarity"));
+
+        updateTable(shop.getCards());
     }
 
     /**
