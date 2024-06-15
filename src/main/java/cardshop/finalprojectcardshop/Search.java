@@ -90,7 +90,7 @@ public class Search {
 
     /**
      * Initializes the shop, reads the file and locates the values into the table. Then it shows
-     * the full list of cards and a way to select the quantity of cards you want to add to the list.
+     * the full list of cards that the user selected before.
      */
     @FXML
     public void initialize() {
