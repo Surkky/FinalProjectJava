@@ -8,10 +8,16 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.ComboBoxTableCell;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+import javafx.util.converter.IntegerStringConverter;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -28,27 +34,26 @@ import java.util.stream.Collectors;
  * @since 1.0
  */
 public class Search {
-
     @FXML
     private TextField CollectionText;
 
     @FXML
-    private TableColumn<?, ?> cardAdd;
+    private TableColumn<SearchCards, Integer> cardAdd;
 
     @FXML
-    private TableColumn<?, ?> cardCollection;
+    private TableColumn<SearchCards, String> cardCollection;
 
     @FXML
-    private TableColumn<?, ?> cardDescription;
+    private TableColumn<SearchCards, String> cardDescription;
 
     @FXML
-    private TableColumn<?, ?> cardName;
+    private TableColumn<SearchCards, String> cardName;
 
     @FXML
-    private TableColumn<?, ?> cardQty;
+    private TableColumn<SearchCards, Integer> cardQty;
 
     @FXML
-    private TableColumn<?, ?> cardRarity;
+    private TableColumn<SearchCards, String> cardRarity;
 
     @FXML
     private TextField NameText;
@@ -61,6 +66,8 @@ public class Search {
 
     @FXML
     private Button searchCollection;
+    @FXML
+    public Button addButton;
 
     @FXML
     private AnchorPane searchFrame;
@@ -69,6 +76,7 @@ public class Search {
     private Button searchName;
 
     private Shop shop;
+    private List<SearchCards> selectedCards = new ArrayList<>();
 
     /**
      * Switches to the main menu scene when the exit button is clicked.
@@ -81,7 +89,8 @@ public class Search {
     }
 
     /**
-     * Initializes the shop, reads the file and locates the values into the table.
+     * Initializes the shop, reads the file and locates the values into the table. Then it shows
+     * the full list of cards and a way to select the quantity of cards you want to add to the list.
      */
     @FXML
     public void initialize() {
@@ -97,6 +106,20 @@ public class Search {
         cardDescription.setCellValueFactory(new PropertyValueFactory<>("description"));
         cardQty.setCellValueFactory(new PropertyValueFactory<>("quantity"));
         cardRarity.setCellValueFactory(new PropertyValueFactory<>("rarity"));
+
+        ObservableList<Integer> qtty = FXCollections.observableArrayList(0, 1, 2, 3, 4, 5);
+        cardAdd.setCellFactory(ComboBoxTableCell.forTableColumn(new IntegerStringConverter(), qtty));
+        cardAdd.setCellValueFactory(new PropertyValueFactory<>("quantity"));
+
+        cardAdd.setOnEditCommit(event -> {
+            SearchCards card = event.getRowValue();
+            card.setQuantity(event.getNewValue());
+            if (!selectedCards.contains(card)) {
+                selectedCards.add(card);
+            }
+        });
+
+        chartCards.setEditable(true);
 
         updateTable(shop.getCards());
     }
@@ -135,5 +158,39 @@ public class Search {
         ObservableList<SearchCards> data = FXCollections.observableArrayList(cards);
         chartCards.setItems(data);
     }
-}
 
+    /**
+     * Saves the selected cards by the user into a file.
+     */
+    private void saveSelectedCardsToFile() throws IOException{
+        String file = "listedCards.txt";
+        try (BufferedWriter w = new BufferedWriter(new FileWriter(file))){
+            for (SearchCards card : selectedCards){
+                w.write(cardString(card));
+                w.newLine();
+            }
+        }
+        selectedCards.clear();
+    }
+
+    /**
+     * Converts the cards into a unique String
+     * @param card the list of cards the user selected.
+     */
+    private String cardString(SearchCards card){
+        return card.getName() + ", " + card.getCollection() + ", " + card.getRarity() +
+                ", " + card.getDescription() + ", " + card.getQuantity();
+    }
+
+    /**
+     * Adds selected cards by user into a file.
+     * @param actionEvent the action event triggered by clicking the add cards button.
+     */
+    public void addSelectedCards(ActionEvent actionEvent) {
+        try{
+            saveSelectedCardsToFile();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+}
