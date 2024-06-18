@@ -1,0 +1,11 @@
+.main-pane {
+    -fx-background-image: url('background.jpg');
+    -fx-background-size: cover;
+}
+
+.logo-image {
+    -fx-background-image: url('otra_imagen.jpg');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}

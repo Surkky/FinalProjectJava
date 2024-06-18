@@ -5,10 +5,12 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="searchFrame" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cardshop.finalprojectcardshop.Search">
+<AnchorPane fx:id="searchFrame" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cardshop.finalprojectcardshop.Search">
    <children>
+      <ImageView fitHeight="532.0" fitWidth="838.0" layoutY="-32.0" pickOnBounds="true" preserveRatio="true" styleClass="background" />
       <TableView fx:id="chartCards" layoutX="18.0" layoutY="21.0" prefHeight="355.0" prefWidth="762.0">
         <columns>
           <TableColumn fx:id="cardName" prefWidth="111.0" text="Name" />

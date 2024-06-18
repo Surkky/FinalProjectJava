@@ -39,7 +39,8 @@ public class Shop
      * @throws IOException if an I/O error occurs.
      */
     public void loadCardsFromFile(String file) throws IOException {
-        try (BufferedReader reader = new BufferedReader(new FileReader("cards.txt"))) {
+        cards.clear();
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] cardDetails = line.split(", ");

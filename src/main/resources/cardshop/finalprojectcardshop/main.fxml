@@ -9,9 +9,14 @@
 
 <AnchorPane fx:id="mainMenu" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cardshop.finalprojectcardshop.HelloController">
    <children>
-      <Label layoutX="332.0" layoutY="208.0" text="Magic Card Shop">
+      <ImageView fitHeight="500.0" fitWidth="800.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="myLogo" fitHeight="233.0" fitWidth="499.0" layoutX="151.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/Magicthegathering-logo.svg.png" />
+         </image></ImageView>
+      <Label layoutX="262.0" layoutY="203.0" prefHeight="47.0" prefWidth="278.0" text="Magic Card Shop">
          <font>
-            <Font size="18.0" />
+            <Font name="Wingdings 2" size="36.0" />
          </font>
       </Label>
       <Button fx:id="searchButton" layoutX="344.0" layoutY="265.0" mnemonicParsing="false" onAction="#goSearch" prefHeight="25.0" prefWidth="113.0" text="Search" />

@@ -63,7 +63,6 @@ public class ListCards {
     void goMainMenu(ActionEvent event) throws IOException {
         new SceneSwitch(listCardsFrame, "main.fxml");
     }
-    //TO DO: change the way it shows the document selected, it shows the og file.
     /**
      * Initializes the shop, reads the file and locates the values into the table. Then it shows
      * the full list of cards and a way to select the quantity of cards you want to add to the list.
